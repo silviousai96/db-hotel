@@ -16,7 +16,7 @@ WHERE `date_of_birth` > '1988-12-31 23:59:59';
 
 SELECT * 
 FROM `ospiti` 
-WHERE `date_of_birth` > '2001-05-25 17:05:00';
+WHERE `date_of_birth` < '2001-05-25 17:05:00';
 
 
 4. Seleziona tutti gli ospiti il cui nome inizia con la D
@@ -51,7 +51,7 @@ AND `date_of_birth` BETWEEN '1975-01-01 00:00:00' AND '1975-12-31 23:59:59';
 
 SELECT * 
 FROM `paganti` 
-WHERE `ospite_id`<> 'NULL';
+WHERE `ospite_id` IS NOT NULL;
 
 
 9. Quanti posti letto ha l’hotel in totale?
