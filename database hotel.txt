@@ -37,6 +37,7 @@ WHERE `status` = 'accepted';
 
 SELECT MAX(`price`) 
 FROM `pagamenti`;
+WHERE `status` = 'accepted';
 
 
 7. Seleziona gli ospiti riconosciuti con patente e nati nel 1975
